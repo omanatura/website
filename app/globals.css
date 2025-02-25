@@ -2,20 +2,250 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+  }
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.1%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+  
+  .text-gradient {
+    @apply bg-gradient-to-r from-emerald-500 to-lime-600 bg-clip-text text-transparent;
+  }
+  .text-gradient-2 {
+    @apply bg-gradient-to-r from-emerald-500 to-lime-400 bg-clip-text text-transparent;
+  }
+  .text-gradient-white {
+    @apply bg-gradient-to-r from-gray-100 to-gray-200 bg-clip-text text-transparent;
+  }
+  .btn-home {
+    @apply hover:text-secondary cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[2.5px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[2.5px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]
+  }
+  .btn-1 {
+    @apply flex justify-center items-center gap-2 cursor-pointer shadow-2xl text-white font-semibold bg-gradient-to-r from-[#14b8a6] via-[#059669] to-[#047857] hover:shadow-xl hover:shadow-green-500 hover:scale-105 duration-300 hover:from-[#047857] hover:to-[#14b8a6] text-xl rounded-tl-full rounded-br-full h-12 px-7 py-5
+  }
+  .btn-2 {
+    @apply flex justify-center items-center gap-2 cursor-pointer shadow-2xl text-white font-semibold bg-gradient-to-r from-[#14b82a] via-[#0a9605] to-[#047857] hover:shadow-xl hover:shadow-green-500 hover:scale-105 duration-300 hover:from-[#04780e] hover:to-[#14b82f] text-xl rounded-full h-12 px-7 py-5
+  }
+  .btn-3 {
+    @apply flex justify-center items-center gap-2 cursor-pointer shadow-2xl text-white font-semibold bg-gradient-to-r from-[#14b8a6] via-[#059669] to-[#047857] hover:shadow-xl hover:shadow-green-500 hover:scale-105 duration-300 hover:from-[#047857] hover:to-[#14b8a6] rounded-full h-12 px-7 py-5
+  }
+  .smallcaps {
+    font-variant: all-small-caps;
+  }
+  .text-darkColor{
+    @apply text-slate-800
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+/*Divider */
+.divider {
+  --b: 6px; /* control the border thickness */
+  --w: 80px; /* control the width of the line*/
+  --g: 15px; /* control the gap */
+  --c: #c6dd69;
+
+  width: fit-content;
+  padding: 0 1em;
+  line-height: 1.6em;
+  border: 1px solid;
+  color: #fff;
+  background:
+    conic-gradient(from 45deg at left, var(--c) 25%, #0000 0) 0,
+    conic-gradient(from -135deg at right, var(--c) 25%, #0000 0) 100%;
+  background-size: 51% 100%;
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  border-image: linear-gradient(
+      #0000 calc(50% - var(--b) / 2),
+      var(--c) 0 calc(50% + var(--b) / 2),
+      #0000 0
+    )
+    1/0 var(--w) / calc(var(--w) + var(--g));
+  margin-inline: auto;
+}
+
+/*Divider Chevron Down Regular*/
+.divider-chevron-down{
+  overflow:hidden;
+  position:relative;
+  }
+  .divider-chevron-down::before{
+  content:'';
+  font-family:'shape divider from ShapeDividers.com';
+  position: absolute;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  top: -1px;
+  z-index: 3;
+  pointer-events: none;
+  background-repeat: no-repeat; 
+  background-size: 100% 32px;
+  background-position: 50% 100%;    
+  background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 476.62 100.69"><path fill="%23ffffff" d="M476.62 100.69V0l-238.3 95.47L0 0v100.69Z"/></svg>'); 
+  }
+  
+  @media (min-width:768px){
+  .divider-chevron-down::before{
+  background-size: 100% 71px;
+  background-position: 50% 100%;   
+  }  
+  }
+  
+  @media (min-width:1025px){
+  .divider-chevron-down::before{ 
+  bottom: -0.1vw;
+  left: -0.1vw;
+  right: -0.1vw;
+  top: -0.1vw; 
+  background-size: 100% 71px;
+  background-position: 50% 100%;  
+  }
+  }
+  @media (min-width:2100px){
+  .divider-chevron-down::before{
+  background-size: 100% calc(2vw + 71px);
+  }
+  }
+  
+  /*Divider Chevron Down Double*/
+  .divider-chevron-down-2{
+  overflow:hidden;
+  position:relative;
+  }
+  .divider-chevron-down-2::before{
+  content:'';
+  font-family:'shape divider from ShapeDividers.com';
+  position: absolute;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  top: -1px;
+  z-index: 3;
+  pointer-events: none;
+  background-repeat: no-repeat; 
+  background-size: 100% 51px;
+  background-position: 50% 0%;    
+  background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1134.63 158.42"><g fill="%23ffffff"><path d="M0 0h1134.63L565.17 111.32Z"/><path d="M0 0v51.38l565.17 107.04 569.46-115.6V0Z" opacity=".66"/></g></svg>'); 
+  }
+  
+  @media (min-width:768px){
+  .divider-chevron-down-2::before{
+  background-size: 100% 51px;
+  background-position: 50% 0%;   
+  }  
+  }
+  
+  @media (min-width:1025px){
+  .divider-chevron-down-2::before{ 
+  bottom: -0.1vw;
+  left: -0.1vw;
+  right: -0.1vw;
+  top: -0.1vw; 
+  background-size: 100% 91px;
+  background-position: 50% 0%;  
+  }
+  }
+  @media (min-width:2100px){
+  .divider-chevron-down-2::before{
+  background-size: 100% calc(2vw + 91px);
+  }
+  }
+  
+  /* Chevron Up Divider */
+  .divider-chevron-up{
+  overflow:hidden;
+  position:relative;
+  }
+  .divider-chevron-up::before{
+  content:'';
+  font-family:'shape divider from ShapeDividers.com';
+  position: absolute;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  top: -1px;
+  z-index: 3;
+  pointer-events: none;
+  background-repeat: no-repeat; 
+  background-size: 100% 32px;
+  background-position: 50% 0%;    
+  background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 476.62 100.69"><path fill="%23ffffff" d="M0 0v100.69L238.3 5.22l238.32 95.47V0Z"/></svg>'); 
+  }
+  
+  @media (min-width:768px){
+  .divider-chevron-up::before{
+  background-size: 100% 71px;
+  background-position: 50% 0%;   
+  }  
+  }
+  
+  @media (min-width:1025px){
+  .divider-chevron-up::before{ 
+  bottom: -0.1vw;
+  left: -0.1vw;
+  right: -0.1vw;
+  top: -0.1vw; 
+  background-size: 100% 71px;
+  background-position: 50% 0%;  
+  }
+  }
+  @media (min-width:2100px){
+  .divider-chevron-up::before{
+  background-size: 100% calc(2vw + 71px);
+  }
+  }
+/* Leafs */
+.leaf {
+  width: 300px;
+  height: 300px;
 }

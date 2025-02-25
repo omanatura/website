@@ -1,0 +1,51 @@
+{
+  "global":{
+    "learnMore": "Learn more...",
+    "testimonials":"Testimonials"
+  },
+  "nav": {
+    "home": "Inicio",
+    "contact": "Contacto",
+    "about-us": "Conózcanos",
+    "tours": "Tours"
+  },
+  "footer":{
+    "description":"",
+    "contact":"Contacto",
+    "terms":"Términos & Condiciones",
+    "privacy":"Políticas de Privacidad",
+    "links":"Enlaces"
+  },
+  "home": {
+    "cta1": "¿Listo para tu próxima aventura?",
+    "cta2": "Ven a Costa Rica",
+    "ctaButton": "Mira nuestros tours",
+    "checkOutOur": "Check out our",
+    "toursIn": "Tours in La Fortuna",
+    "mission1": "We aim to give you a ",
+    "mission2": "real experience ",
+    "mission3": "at one of the world's most ",
+    "mission4": "biodiverse ",
+    "mission5": "countries",
+    "missionitem1": "Be amazed by wildlife",
+    "missionitem2": "Connect with local culture",
+    "missionitem3": "Immersive experiences"
+  },
+  "tour":{
+    "oneWeekName": "1-Week Rainforest Experience",
+    "oneWeekShortDescription":
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+
+    "morningName": "Morning Chants: Birdwatching Tour",
+    "morningShortDescription":
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+
+    "childrenName": "Children's Eternal Rainforest",
+    "childrenShortDescription":
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+
+    "moonlitName": "Moonlit Creatures: Night Tour",
+    "moonlitShortDescription":
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+  }
+}
