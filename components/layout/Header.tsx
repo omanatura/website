@@ -1,4 +1,3 @@
-import { useTranslations } from "next-intl";
 import Logo from "../Logo";
 import Nav from "./Nav";
 import LangSwitcher from "./LangSwitcher";

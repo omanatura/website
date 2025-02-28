@@ -85,10 +85,12 @@ const About = () => {
       className="mx-auto flex flex-col gap-2 px-4 border border-gray-300 rounded-lg"
     >
       <div className="w-full flex justify-center items-center">
-        <img
+        <Image
           className="w-[11rem] h-[11rem] rounded-full outline outline-offset-2 outline-1 outline-green-400 shadow-lg relative -top-[4rem]"
           src="https://lh3.googleusercontent.com/a/ACg8ocIexhm"
           alt="Profile Image"
+          width={500}
+          height={500}
         />
       </div>
 
