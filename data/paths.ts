@@ -1,6 +1,6 @@
 export const paths = [
     "home",
-    "about-us",
+    "about",
     "tours",
     "contact",
 ];

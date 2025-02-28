@@ -1,16 +1,16 @@
 {
-  "global":{
-    "learnMore": "Learn more...",
-    "testimonials":"Testimonials"
+  "global": {
+    "learnMore": "Ver más...",
+    "testimonials": "Testimonios"
   },
   "nav": {
     "home": "Inicio",
     "contact": "Contacto",
-    "about-us": "Conózcanos",
+    "about": "Conózcanos",
     "tours": "Tours"
   },
   "footer":{
-    "description":"",
+    "description":"Durante más de 5 años, hemos sido apasionados por guiar a exploradores como tú al corazón del vibrante ecosistema de Costa Rica.",
     "contact":"Contacto",
     "terms":"Términos & Condiciones",
     "privacy":"Políticas de Privacidad",
@@ -20,18 +20,33 @@
     "cta1": "¿Listo para tu próxima aventura?",
     "cta2": "Ven a Costa Rica",
     "ctaButton": "Mira nuestros tours",
-    "checkOutOur": "Check out our",
-    "toursIn": "Tours in La Fortuna",
-    "mission1": "We aim to give you a ",
-    "mission2": "real experience ",
-    "mission3": "at one of the world's most ",
-    "mission4": "biodiverse ",
-    "mission5": "countries",
-    "missionitem1": "Be amazed by wildlife",
-    "missionitem2": "Connect with local culture",
-    "missionitem3": "Immersive experiences"
-  },
+    "checkOutOur": "Descubre nuestros",
+    "toursIn": "Tours en La Fortuna",
+    "mission1": "Nuestro objetivo es brindarte una ",
+    "mission2": "experiencia auténtica ",
+    "mission3": "en uno de los países más ",
+    "mission4": "biodiversos ",
+    "mission5": "del mundo",
+    "missionitem1": "Sorpréndete con la vida silvestre",
+    "missionitem2": "Conéctate con la cultura local",
+    "missionitem3": "Experiencias inmersivas"
+    },
+  "about": {
+    "weAre": "Somos",
+    "header1": "Tu puerta de entrada a aventuras inolvidables en el ",
+    "header2": "Bosque de Costa Rica",
+    "content": "Durante más de 5 años, hemos sido apasionados por guiar a exploradores como tú al corazón de este vibrante ecosistema.",
+    "ourMission": "Nuestra Misión",
+    "mission": "Estamos comprometidos a mostrar la belleza auténtica de Costa Rica y su gente. Explora joyas ocultas y conéctate con las comunidades locales.",
+    "ourVision": "Nuestra Visión",
+    "vision": "Estamos comprometidos a mostrar la belleza auténtica de Costa Rica y su gente. Explora joyas ocultas y conéctate con las comunidades locales.",
+    "ourStory": "Nuestra Historia",
+    "story": "Fundada en 2019 por el experimentado guía Flavio Pana, OMA Natura es una agencia de tours con sede en La Fortuna, Costa Rica. Con más de una década de experiencia en guía, Flavio y un equipo de expertos locales tienen como objetivo ofrecer tours únicos e inolvidables. Especializados en observación de aves y tours nocturnos, OMA Natura te lleva tanto a joyas ocultas como a lugares populares del Bosque Lluvioso de Costa Rica, brindándote una experiencia de vida silvestre sin igual. Únete a nosotros para explorar la vibrante biodiversidad y la serena belleza de Costa Rica como nunca antes."
+    },
   "tour":{
+    "dayTrip":" día",
+    "daysTrip":" día",
+    
     "oneWeekName": "1-Week Rainforest Experience",
     "oneWeekShortDescription":
       "Lorem ipsum dolor sit amet consectetur adipisicing elit.",

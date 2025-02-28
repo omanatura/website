@@ -1,11 +1,11 @@
 import Image from "next/image";
 import { useTranslations, useLocale } from "next-intl";
 import Link from "next/link";
-import CarouselHome from "@/components/CarouselHome";
+import CarouselHome from "@/components/carousels/CarouselHome";
 import { tours } from "@/data/tours";
 import { MdLocationOn } from "react-icons/md";
-import CardHome from "@/components/CardHome";
-import Testimonials from "@/components/CarouselTestimonials";
+import CardHome from "@/components/cards/CardHome";
+import Testimonials from "@/components/carousels/CarouselTestimonials";
 
 export default function Home() {
   //Get translations
@@ -43,7 +43,9 @@ export default function Home() {
           </h2>
           <div className="relative mt-5 mb-16 lg:mb-5">
             <div className="flex justify-center absolute w-full z-40">
-              <button className="btn-1">{globalT("learnMore")}</button>
+              <Link href={`/${locale}/tour/one-week`} className="btn-1">
+                {globalT("learnMore")}
+              </Link>
             </div>
           </div>
         </div>
@@ -63,14 +65,14 @@ export default function Home() {
       <section className="container mx-auto my-10 px-5">
         <div className="grid grid-cols-1 gap-5 md:grid-cols-3 md:gap-0 mx-0 xl:mx-48">
           {tours.map((tour) => (
-            <CardHome tour={tour} />
+            <CardHome key={tour.name} tour={tour} />
           ))}
         </div>
       </section>
 
       {/* <!-- Goal section  --> */}
       <section className="mt-5">
-        <div className="divider h-10 mb-10"></div>
+        <div className="divider h-10 mb-10 mt-14"></div>
         <div className="container mx-auto">
           <div className="flex justify-center">
             <h3 className="text-center text-3xl font-extrabold md:w-[75%] lg:w-[50%]">
@@ -82,7 +84,7 @@ export default function Home() {
             </h3>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:mx-16 max-h-50">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:mx-16 ">
             <div className="flex flex-col justify-center items-center mt-5">
               <Image
                 alt="p"
@@ -115,7 +117,7 @@ export default function Home() {
                 alt=""
                 width={200}
                 height={200}
-                style={{ clipPath: "url(#leafClipPath)"}}
+                style={{ clipPath: "url(#leafClipPath)" }}
               />
               <h1 className="text-center text-lg font-bold text-green-700">
                 {homeT("missionitem3")}
@@ -123,29 +125,32 @@ export default function Home() {
             </div>
             {/* LEAF CLIP PATH */}
             <svg
-                width="100"
-                height="100"
-                viewBox="0 0 200 200"
-                xmlns="http://www.w3.org/2000/svg"
+              width="100"
+              height="100"
+              viewBox="0 0 200 200"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <clipPath
+                id="leafClipPath"
+                transform="scale(1.7) translate(-33, -10)"
               >
-                <clipPath id="leafClipPath" transform="scale(1.7) translate(-33, -10)">
-                  <path d="M100,10 C130,30 150,60 150,100 C150,140 130,170 100,190 C70,170 50,140 50,100 C50,60 70,30 100,10 Z"></path>
-                </clipPath>
-              </svg>
+                <path d="M100,10 C130,30 150,60 150,100 C150,140 130,170 100,190 C70,170 50,140 50,100 C50,60 70,30 100,10 Z"></path>
+              </clipPath>
+            </svg>
           </div>
         </div>
       </section>
 
       {/* <!-- Testimonials --> */}
-<section className="flex justify-center mt-10 mb-10">
-  <div>
-    <div className="divider h-10 mb-10"></div>
-    <h3 className="text-center font-bold text-gradient text-3xl mb-10">
-      {globalT('testimonials')}
-    </h3>
-    <Testimonials />
-  </div>
-</section>
+      <section className="flex justify-center mb-10">
+        <div>
+          <div className="divider h-10 mb-10"></div>
+          <h3 className="text-center font-bold text-gradient text-3xl mb-10">
+            {globalT("testimonials")}
+          </h3>
+          <Testimonials />
+        </div>
+      </section>
     </main>
   );
 }

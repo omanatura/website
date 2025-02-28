@@ -1,20 +1,20 @@
 {
-  "global":{
+  "global": {
     "learnMore": "Learn more...",
-    "testimonials":"Testimonials"
+    "testimonials": "Testimonials"
   },
   "nav": {
     "home": "Home",
-    "about-us": "About",
+    "about": "About",
     "contact": "Contact",
     "tours": "Tours"
   },
-  "footer":{
-    "description":"",
-    "contact":"Contact",
-    "terms":"Terms & Conditions",
-    "privacy":"Privacy Policy",
-    "links":"Quick Links"
+  "footer": {
+    "description": "For over 5 years, we've been passionate about guiding explorers like you into the heart of the vibrant ecosystem of Costa Rica.",
+    "contact": "Contact",
+    "terms": "Terms & Conditions",
+    "privacy": "Privacy Policy",
+    "links": "Quick Links"
   },
   "home": {
     "cta1": "Ready for your next adventure?",
@@ -31,21 +31,37 @@
     "missionitem2": "Connect with local culture",
     "missionitem3": "Immersive experiences"
   },
-  "tour":{
+  "about": {
+    "weAre": "We are",
+    "header1": "Your gateway to unforgettable adventures in the ",
+    "header2": "Costa Rican Rainforest!",
+    "content": "For +5 years, we've been passionate about guiding explorers like you into the heart of this vibrant ecosystem.",
+    "ourMission": "Our Mission",
+    "mission": "We're committed to showcasing the authentic beauty of Costa Rica and its people. Explore hidden gems & connect with local communities.",
+    "ourVision": "Our Vision",
+    "vision": "We're committed to showcasing the authentic beauty of Costa Rica and its people. Explore hidden gems & connect with local communities.",
+    "ourStory": "Our Story",
+    "story": "Founded in 2019 by seasoned guide Flavio Pana, OMA Natura is a tour agency based in La Fortuna, Costa Rica. With over a decade of guiding experience, Flavio and a team of local experts aim to offer unique and unforgettable tours. Specializing in birdwatching and night tours, OMA Natura takes you to both hidden gems and popular spots in the Costa Rican Rainforest, providing an unparalleled wildlife experience. Join us to explore the vibrant biodiversity and the serene beauty of Costa Rica like never before."
+  },
+  "contact":{
+    "contactUs":"Contact Us",
+    "cta":"Contact us now in WhatsApp",
+    "orEmail":"...or send us an email"
+  },
+  "tours": {
+    "dayTrip":" day",
+    "daysTrip":" days",
+
     "oneWeekName": "1-Week Rainforest Experience",
-    "oneWeekShortDescription":
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "oneWeekShortDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
 
     "morningName": "Morning Chants: Birdwatching Tour",
-    "morningShortDescription":
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "morningShortDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
 
     "childrenName": "Children's Eternal Rainforest",
-    "childrenShortDescription":
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "childrenShortDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
 
     "moonlitName": "Moonlit Creatures: Night Tour",
-    "moonlitShortDescription":
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    "moonlitShortDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
   }
 }

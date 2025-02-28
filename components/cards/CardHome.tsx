@@ -19,12 +19,12 @@ const CardHome = ({tour}: CardProps) => {
   const locale = useLocale();
 
   return (
-    <div key={`${tour.name} card`} className="card h-[80vh] lg:h-full">
+    <div className="card-home h-[80vh] lg:h-full">
       <div className="absolute top-0 left-0">
         <Image src={tour.images[0]} alt={`${tour.name} image`} width={500} height={500} className="w-full h-[80vh] object-cover"/>
       </div>
-      <div className="content mx-5 backdrop-blur z-40 rounded-3xl">
-        <h2 className="title drop-shadow-2xl">{t(tour.name)}</h2>
+      <div className="content-card-home mx-5 backdrop-blur z-40 rounded-3xl">
+        <h2 className="title-card-home drop-shadow-2xl">{t(tour.name)}</h2>
         <p className="text-sm">{t(tour.shortDescription)}</p>
         <Link className="btn-1 text-sm" href={`/${locale}/tour/${tour.slug}`}>
           {globalT("learnMore")}

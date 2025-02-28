@@ -1,9 +1,13 @@
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import Logo from "../Logo";
 import Link from "next/link";
+import { main } from "@/data/main";
+import Image from "next/image";
 
 const Footer = () => {
   const t = useTranslations("footer");
+  const locale = useLocale();
+
   return (
     <footer className=" bg-zinc-900 pt-9 divider-chevron-up">
       <div className="mx-auto mt-20 w-full max-w-[1166px] px-4 xl:px-0">
@@ -13,78 +17,36 @@ const Footer = () => {
             <p className="mt-[18px] text-[15px] font-normal text-white/[80%]">
               {t("description")}
             </p>
+            {/* Social Networks */}
             <div className="mt-[18px] flex gap-4">
-              <Link className="hover:scale-110" target="_blank" href="#">
-                <img
-                  alt="facebook icon"
-                  loading="lazy"
-                  width="36"
-                  height="36"
-                  decoding="async"
-                  data-nimg="1"
-                  style={{ color: "transparent" }}
-                  src="https://www.englishyaari.com/img/facebook.svg"
-                />
-              </Link>
-              <Link className="hover:scale-110" target="_blank" href="/">
-                <img
-                  alt="linkdin icon"
-                  loading="lazy"
-                  width="36"
-                  height="36"
-                  decoding="async"
-                  data-nimg="1"
-                  style={{ color: "transparent" }}
-                  src="https://www.englishyaari.com/img/linkdin.svg"
-                />
-              </Link>
-              <Link className="hover:scale-110" target="_blank" href="/">
-                <img
-                  alt="instagram icon"
-                  loading="lazy"
-                  width="36"
-                  height="36"
-                  decoding="async"
-                  data-nimg="1"
-                  style={{ color: "transparent" }}
-                  src="https://www.englishyaari.com/img/instagram1.svg"
-                />
-              </Link>
-              <Link className="hover:scale-110" target="_blank" href="">
-                <img
-                  alt="twitter icon"
-                  loading="lazy"
-                  width="36"
-                  height="36"
-                  decoding="async"
-                  data-nimg="1"
-                  style={{ color: "transparent" }}
-                  src="https://www.englishyaari.com/img/twitter.svg"
-                />
-              </Link>
-              <Link
-                className="hover:scale-110"
-                target="_blank"
-                href="https://www.youtube.com/"
-              >
-                <img
-                  alt="youtube icon"
-                  loading="lazy"
-                  width="36"
-                  height="36"
-                  decoding="async"
-                  data-nimg="1"
-                  style={{ color: "transparent" }}
-                  src="https://www.englishyaari.com/img/youtube.svg"
-                />
-              </Link>
+              {main.socialNetworks.map((social) => {
+                return (
+                  <Link
+                    key={social.name}
+                    className="hover:scale-110"
+                    target="_blank"
+                    href={social.link}
+                  >
+                    <Image
+                      alt={social.name}
+                      loading="lazy"
+                      width={36}
+                      height={36}
+                      decoding="async"
+                      data-nimg="1"
+                      style={{ color: "transparent" }}
+                      src={social.icon}
+                    />
+                  </Link>
+                );
+              })}
             </div>
           </div>
 
           <div className="md:w-[316px]">
             <p className="text-white font-inter text-[18px] font-medium leading-normal">
-                {t("contact")}
-              </p>
+              {t("contact")}
+            </p>
             <div className="mt-[23px] flex items-center">
               <div className="flex h-[38px] w-[38px] items-center justify-center rounded-[75%]">
                 <svg
@@ -102,11 +64,11 @@ const Footer = () => {
               </div>
               <div className="ml-[18px]">
                 <Link
-                  href="https://wa.me/50689593866"
+                  href={main.waLink}
                   target="_blank"
                   className="font-Inter text-[14px] font-medium text-white"
                 >
-                  +506 8959 3866
+                  {main.phoneNumber}
                 </Link>
               </div>
             </div>
@@ -127,11 +89,11 @@ const Footer = () => {
               </div>
               <div className="ml-[18px]">
                 <Link
-                  href="mailto:help@lorem.com"
+                  href={`/`}
                   target="_blank"
-                  className="font-Inter text-[14px] font-medium text-[#fff]"
+                  className="text-[14px] font-medium text-[#fff]"
                 >
-                  info@omanatura.com
+                  {main.email}
                 </Link>
               </div>
             </div>
@@ -151,13 +113,11 @@ const Footer = () => {
                 </svg>
               </div>
               <div className="ml-[18px]">
-                <Link
-                  href="mailto:help@lorem.com"
-                  target="_blank"
-                  className="font-Inter text-[14px] font-medium text-[#fff]"
+                <p
+                  className="text-[14px] font-medium text-[#fff]"
                 >
-                  La Fortuna, San Carlos, Costa Rica
-                </Link>
+                  {main.address}
+                </p>
               </div>
             </div>
           </div>
@@ -165,29 +125,29 @@ const Footer = () => {
           <div className="mt-6 flex flex-col justify-between text-white sm:flex-row md:mt-0 md:max-w-[341px]">
             <div className="">
               <p className="text-deutziawhite font-inter text-[18px] font-medium leading-normal">
-              {t("links")}
+                {t("links")}
               </p>
               <ul>
-                <li className="mt-[15px]">
+                <li key="contact-footer" className="mt-[15px]">
                   <Link
                     className="text-deutziawhite hover:text-deutziawhite/80 font-inter text-[15px] font-normal hover:font-semibold"
-                    href="/become-Link-tutor"
+                    href={`/${locale}/contact`}
                   >
                     {t("contact")}
                   </Link>
                 </li>
-                <li className="mt-[15px]">
+                <li key="terms-footer" className="mt-[15px]">
                   <Link
                     className="text-deutziawhite hover:text-deutziawhite/80 font-inter text-[15px] font-normal hover:font-semibold"
-                    href="/terms-and-conditions"
+                    href={`/${locale}/terms-and-conditions`}
                   >
                     {t("terms")}
                   </Link>
                 </li>
-                <li className="mt-[15px]">
+                <li key="privacy-footer" className="mt-[15px]">
                   <Link
                     className="text-deutziawhite hover:text-deutziawhite/80 font-inter text-[15px] font-normal hover:font-semibold"
-                    href="/privacy-policy"
+                    href={`/${locale}/privacy-policy`}
                   >
                     {t("privacy")}
                   </Link>
