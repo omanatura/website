@@ -10,7 +10,7 @@ import Testimonials from "@/components/carousels/CarouselTestimonials";
 export default function Home() {
   //Get translations
   const homeT = useTranslations("home");
-  const tourT = useTranslations("tour");
+  const tourT = useTranslations("tours");
   const globalT = useTranslations("global");
   const locale = useLocale();
 
