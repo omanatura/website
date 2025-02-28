@@ -14,7 +14,7 @@ type CardProps = {
 
 const CardHome = ({tour}: CardProps) => {
   //Get translations & currentLocale
-  const t = useTranslations("tour");
+  const t = useTranslations("tours");
   const globalT = useTranslations("global");
   const locale = useLocale();
 
