@@ -11,8 +11,7 @@
 
   .card-tour h3 {
     color: white;
-    margin: 20px 0 0 20px;
-    @apply text-3xl md:text-xl font-bold;
+    @apply text-3xl md:text-xl font-bold m-3 me-2;
   }
 
   .card-tour p {

@@ -11,10 +11,10 @@ export type Tour = {
     location: string;
     places: string[];
     languages: string[];
-    startTime?: string; // Optional field
-    duration?: string; // Optional field
+    startTime?: string; 
+    duration?: string; 
     accessibility?: {
-      wheelchair?: boolean; // Optional field
-      fourWheel?: boolean; // Optional field
+      wheelchair?: boolean; 
+      fourWheel?: boolean; 
     };
   };

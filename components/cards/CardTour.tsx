@@ -27,12 +27,12 @@ const CardTour = ({ tour }: CardProps) => {
           src={images[0]}
           alt={`Photo of the Tour ${name}`}
           className="object-cover"
-          width="500"
-          height="500"
+          width="800"
+          height="800"
         />
         <div className="flex justify-between">
         <h3 className="text-gradient-white text-lg">{t(name)}</h3>
-        <span className="bg-green-100 text-green-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded-full h-fit mt-3 min-w-fit">
+        <span className="bg-green-100 text-green-800 text-sm font-medium me-3 mt-3 px-2.5 py-0.5 rounded-full h-fit min-w-fit">
             {days}{t((days > 1 ? 'daysTrip':'dayTrip'))}
           </span>
         </div>

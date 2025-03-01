@@ -20,7 +20,7 @@
     "cta1": "¿Listo para tu próxima aventura?",
     "cta2": "Ven a Costa Rica",
     "ctaButton": "Mira nuestros tours",
-    "checkOutOur": "Descubre nuestros",
+    "checkOutOur": "Conozca sobre nuestra experiencia",
     "toursIn": "Tours en La Fortuna",
     "mission1": "Nuestro objetivo es brindarte una ",
     "mission2": "experiencia auténtica ",
@@ -43,11 +43,11 @@
     "ourStory": "Nuestra Historia",
     "story": "Fundada en 2019 por el experimentado guía Flavio Pana, OMA Natura es una agencia de tours con sede en La Fortuna, Costa Rica. Con más de una década de experiencia en guía, Flavio y un equipo de expertos locales tienen como objetivo ofrecer tours únicos e inolvidables. Especializados en observación de aves y tours nocturnos, OMA Natura te lleva tanto a joyas ocultas como a lugares populares del Bosque Lluvioso de Costa Rica, brindándote una experiencia de vida silvestre sin igual. Únete a nosotros para explorar la vibrante biodiversidad y la serena belleza de Costa Rica como nunca antes."
     },
-  "tour":{
+  "tours":{
     "dayTrip":" día",
     "daysTrip":" día",
-    
-    "oneWeekName": "1-Week Rainforest Experience",
+
+    "oneWeekName": "Una semana en el bosque",
     "oneWeekShortDescription":
       "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
 

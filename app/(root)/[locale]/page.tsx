@@ -64,7 +64,7 @@ export default function Home() {
       </section>
       <section className="container mx-auto my-10 px-5">
         <div className="grid grid-cols-1 gap-5 md:grid-cols-3 md:gap-0 mx-0 xl:mx-48">
-          {tours.map((tour) => (
+          {(tours.slice(1)).map((tour) => (
             <CardHome key={tour.name} tour={tour} />
           ))}
         </div>
