@@ -18,9 +18,7 @@ interface ImageZoomProps {
 const ImageZoom: React.FC<ImageZoomProps> = ({
   zoom = "200",
   fullWidth = false,
-  alt = "This is an imageZoom image",
-  width = "100%",
-  height = "auto",
+  alt = "Tour image",
   src,
   id,
   className,
