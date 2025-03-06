@@ -1,11 +1,11 @@
 import Testimonials from "@/components/carousels/CarouselTestimonials";
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import { main } from "@/data/main";
 
-const About = () => {
-    const t = useTranslations("about");
-    const g = useTranslations("global");
+const About = async () => {
+    const t = await getTranslations("about");
+    const g = await getTranslations("global");
   return (
     <section>
       {/* Header */}

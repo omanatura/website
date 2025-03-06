@@ -1,7 +1,12 @@
 {
   "global": {
     "learnMore": "Ver más...",
-    "testimonials": "Testimonios"
+    "testimonials": "Testimonios",
+    "price":"Precio (por persona):",
+    "duration":"Duration",
+    "startTime":"Start Time",
+    "attendants":"Attendants",
+    "upTo":"up to"
   },
   "nav": {
     "home": "Inicio",
@@ -51,15 +56,15 @@
     "oneWeekShortDescription":
       "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
 
-    "morningName": "Morning Chants: Birdwatching Tour",
+    "morningName": "Cantos Mañaneros: Avistamiento de aves",
     "morningShortDescription":
       "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
 
-    "childrenName": "Children's Eternal Rainforest",
+    "childrenName": "Bosque Eterno de los Niños",
     "childrenShortDescription":
       "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
 
-    "moonlitName": "Moonlit Creatures: Night Tour",
+    "moonlitName": "Creaturas bajo la luna: Caminata nocturna",
     "moonlitShortDescription":
       "Lorem ipsum dolor sit amet consectetur adipisicing elit."
   }

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { useTranslations, useLocale } from "next-intl";
+import { getTranslations, getLocale } from "next-intl/server";
 import Link from "next/link";
 import CarouselHome from "@/components/carousels/CarouselHome";
 import { tours } from "@/data/tours";
@@ -7,12 +7,12 @@ import { MdLocationOn } from "react-icons/md";
 import CardHome from "@/components/cards/CardHome";
 import Testimonials from "@/components/carousels/CarouselTestimonials";
 
-export default function Home() {
+export default async function Home() {
   //Get translations
-  const homeT = useTranslations("home");
-  const tourT = useTranslations("tours");
-  const globalT = useTranslations("global");
-  const locale = useLocale();
+  const homeT = await getTranslations("home");
+  const tourT = await getTranslations("tours");
+  const globalT = await getTranslations("global");
+  const locale = await getLocale();
 
   return (
     <main>
@@ -123,6 +123,7 @@ export default function Home() {
                 {homeT("missionitem3")}
               </h1>
             </div>
+            
             {/* LEAF CLIP PATH */}
             <svg
               width="100"

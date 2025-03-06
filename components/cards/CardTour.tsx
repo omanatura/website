@@ -1,4 +1,4 @@
-import { useTranslations, useLocale } from "next-intl";
+import { getTranslations, getLocale } from "next-intl/server";
 import Image from "next/image";
 import Link from "next/link";
 import "./CardTour.css";
@@ -13,9 +13,9 @@ type CardProps = {
   };
 };
 
-const CardTour = ({ tour }: CardProps) => {
-  const t = useTranslations("tours");
-  const locale = useLocale();
+const CardTour = async ({ tour }: CardProps) => {
+  const t = await getTranslations("tours");
+  const locale = await getLocale();
 
   const { name, shortDescription, images, slug, days } = tour;
 

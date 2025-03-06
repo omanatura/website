@@ -186,8 +186,8 @@ const ImageZoom: React.FC<ImageZoomProps> = ({
           src={imgData}
           alt={alt}
           style={{ opacity: state.isZoomed ? 0 : 1 }}
-          width={3000}
-          height={3000}
+          width={1500}
+          height={1500}
         />
       )}
     </figure>

@@ -7,14 +7,14 @@ import {
 } from "@/components/ui/sheet";
 import { Button } from "../ui/button";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { useLocale, useTranslations } from "next-intl";
+import { getTranslations, getLocale } from "next-intl/server";
 import Link from "next/link";
 import { paths } from "@/data/paths";
 
-const MobileNav = () => {
+const MobileNav = async () => {
   //Get translations & currentLocale
-  const t = useTranslations("nav");
-  const currentLocale = useLocale();
+  const t = await getTranslations("nav");
+  const currentLocale = await getLocale();
 
   return (
     <Sheet>

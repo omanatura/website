@@ -1,7 +1,12 @@
 {
   "global": {
     "learnMore": "Learn more...",
-    "testimonials": "Testimonials"
+    "testimonials": "Testimonials",
+    "price":"Price",
+    "duration":"Duration",
+    "startTime":"Start Time",
+    "attendants":"Attendants",
+    "upTo":"up to"
   },
   "nav": {
     "home": "Home",

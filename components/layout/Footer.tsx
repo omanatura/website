@@ -1,12 +1,12 @@
-import { useTranslations, useLocale } from "next-intl";
+import { getTranslations, getLocale } from "next-intl/server";
 import Logo from "../Logo";
 import Link from "next/link";
 import { main } from "@/data/main";
 import Image from "next/image";
 
-const Footer = () => {
-  const t = useTranslations("footer");
-  const locale = useLocale();
+const Footer = async () => {
+  const t = await getTranslations("footer");
+  const locale = await getLocale();
 
   return (
     <footer className=" bg-zinc-900 pt-9 divider-chevron-up">
