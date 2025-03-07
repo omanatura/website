@@ -2,11 +2,14 @@
   "global": {
     "learnMore": "Ver más...",
     "testimonials": "Testimonios",
-    "price":"Precio (por persona):",
-    "duration":"Duration",
-    "startTime":"Start Time",
-    "attendants":"Attendants",
-    "upTo":"up to"
+    "upTo":"hasta",
+    "from":"Desde",
+    "adult":"adulto",
+    "adults":"adultos",
+    "noUpfront":"No se requiere pago adelantado",
+    "taxIncluded":"Impuesto incluído",
+    "freeCancel":"Cancelación gratis",
+    "reserveNow":"Reserva ya"
   },
   "nav": {
     "home": "Inicio",

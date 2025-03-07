@@ -17,8 +17,45 @@ export default async function Home() {
   return (
     <main>
       {/* Hero Section */}
-      <section className="bg-home bg-cover divider-chevron-down">
-        <div className="backdrop-brightness-50 flex flex-col justify-center items-center min-h-[85vh] md:min-h-[110vh]">
+      <section className="relative w-full overflow-hidden divider-chevron-down">
+        {/* Video for desktop */}
+        <video
+        autoPlay
+        loop
+        muted
+        style={{
+          position: 'absolute',
+          top: '50%',
+          left: '50%',
+          width: '100%',
+          height: '100%',
+          objectFit: 'cover',
+          transform: 'translate(-50%, -50%)',
+          zIndex: '-1',
+        }}
+        className="desktop-video"
+      ><source src="/images/home-video-compressed.mp4" type="video/mp4" />
+      Your browser does not support the video tag.</video>
+
+        {/* Image for mobile */}
+      <Image
+        src="/images/by-tom-rogers-unsplash.jpg"
+        alt="Background"
+        fill
+        style={{
+          position: 'absolute',
+          top: '50%',
+          left: '50%',
+          width: '100%',
+          height: '100%',
+          objectFit: 'cover',
+          transform: 'translate(-50%, -50%)',
+          zIndex: '-1'
+        }}
+        className="mobile-image"
+      />
+
+        <div className="backdrop-brightness-50 flex flex-col justify-center items-center min-h-[85vh] md:min-h-[110vh] px-3">
           <h2 className="font-bold text-lg md:text-3xl text-white text-center uppercase">
             {homeT("cta1")}
           </h2>

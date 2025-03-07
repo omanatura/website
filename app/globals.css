@@ -84,6 +84,12 @@
   .text-darkColor{
     @apply text-slate-800
   }
+  .desktop-video{
+    @apply hidden lg:block
+  }
+  .mobile-image {
+    @apply block lg:hidden
+  }
 }
 
 /*Divider */

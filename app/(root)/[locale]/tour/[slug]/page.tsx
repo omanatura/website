@@ -28,7 +28,7 @@ export default async function TourPage({ params }: TourPageProps) {
   }
 
   return (
-    <main>
+    <main className="mb-10">
       <section className=" divider-chevron-down">
         <Image
           alt="Tour banner"
@@ -53,7 +53,7 @@ export default async function TourPage({ params }: TourPageProps) {
         <ImageGallery images={tour.images} tourName={t(tour.name)} />
       </section>
 
-      <section className="container mx-auto px-3 grid grid-cols-1 xl:grid-cols-3 gap-5">
+      <section className="container mx-auto px-3 grid grid-cols-1 lg:grid-cols-3 gap-5">
         <div className="col-span-2"><Post /></div>
         <div><TourReservation tour={tour}/></div>
       </section>

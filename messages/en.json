@@ -2,11 +2,14 @@
   "global": {
     "learnMore": "Learn more...",
     "testimonials": "Testimonials",
-    "price":"Price",
-    "duration":"Duration",
-    "startTime":"Start Time",
-    "attendants":"Attendants",
-    "upTo":"up to"
+    "upTo":"up to",
+    "from":"From",
+    "adult":"adult",
+    "adults":"adults",
+    "noUpfront":"No upfront payment needed",
+    "taxIncluded":"Tax included",
+    "freeCancel":"Free cancellation",
+    "reserveNow":"Reserve Now"
   },
   "nav": {
     "home": "Home",
@@ -23,7 +26,7 @@
   },
   "home": {
     "cta1": "Ready for your next adventure?",
-    "cta2": "Come to Costa Rica",
+    "cta2": "Visit Costa Rica",
     "ctaButton": "Check out our tours!",
     "checkOutOur": "Check out our",
     "toursIn": "Tours in La Fortuna",
