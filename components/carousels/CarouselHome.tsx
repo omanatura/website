@@ -14,7 +14,7 @@ export default function CarouselHome() {
           <CarouselItem>
             <div className="relative">
               <Image
-                src="/images/by-etienne-delorieux-unsplash.jpg"
+                src="/images/one-week/banner1.jpg"
                 alt="Carousel Image 1"
                 width={1200}
                 height={600}
@@ -33,7 +33,7 @@ export default function CarouselHome() {
           <CarouselItem>
             <div className="relative">
               <Image
-                src="/images/by-tom-rogers-unsplash.jpg"
+                src="/images/one-week/banner2.jpg"
                 alt="Carousel Image 2"
                 width={1200}
                 height={600}
@@ -41,7 +41,7 @@ export default function CarouselHome() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end p-6 md:p-8 lg:p-10">
                 <div className="text-white space-y-2">
-                  <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold">Culinary Delights</h3>
+                  <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold">Wildlife </h3>
                   <p className="text-base md:text-lg lg:text-xl">
                     Indulge in a world of flavors and savor the finest gastronomic experiences.
                   </p>
