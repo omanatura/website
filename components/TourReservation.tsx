@@ -114,10 +114,10 @@ const TourReservation = ({ tour }: { tour: Tour }) => {
           userScrolled ? "block" : "lg:hidden"
         } animate-fadeIn flex justify-between fixed bottom-0 z-[60] left-0 w-screen h-[104px] p-3 bg-slate-100 shadow-[0px_-3px_6px_0px_rgba(0,_0,_0,_0.1)]`}
       >
-        <div className="flex gap-2">
+        <div className="flex gap-1 sm:gap-2">
           <div className="flex flex-col justify-end">
             <h4 className="font-bold text-xl">{gt("from")}:</h4>
-            <div className="flex justify-end gap-2">
+            <div className="flex justify-end gap-1 sm:gap-2">
               <h4 className="text-primary text-4xl sm:text-5xl font-extrabold">
                 ${total}
               </h4>
