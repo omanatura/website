@@ -3,7 +3,7 @@ import { FaWhatsapp } from "react-icons/fa";
 
 const Contact = () => {
   return (
-    <main>
+    <main className="min-h-[80vh]">
       <section className="bg-rainforest1 bg-cover">
         <div className="backdrop-brightness-50 -full pt-24 pb-12 px-5 md:pt-32 text-white drop-shadow-2xl">
           <h1 className="text-center text-6xl mb-2 smallcaps font-extrabold">

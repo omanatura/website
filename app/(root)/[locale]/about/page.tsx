@@ -59,7 +59,7 @@ const About = async () => {
     <div className="flex items-center justify-center mt-10 order-2 md:order-1">
       <div>
         <Image
-          src="/images/people/4.jpg"
+          src="/images/people/3.jpg"
           alt="photo"
           width={500}
           height={500}
@@ -87,7 +87,7 @@ const About = async () => {
       <div className="w-full flex justify-center items-center">
         <Image
           className="w-[11rem] h-[11rem] rounded-full outline outline-offset-2 outline-1 outline-green-400 shadow-lg relative -top-[4rem]"
-          src="https://lh3.googleusercontent.com/a/ACg8ocIexhm"
+          src="/images/people/1.jpg"
           alt="Profile Image"
           width={500}
           height={500}

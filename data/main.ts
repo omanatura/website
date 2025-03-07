@@ -15,10 +15,10 @@ export const main = {
             "icon":"/images/icons/facebook.png",
             "link":"https://www.instagram.com/oma_natura/"
         },
-        {
-            "name":"trip_advisor",
-            "icon":"/images/icons/tripadvisor.png",
-            "link":"https://www.instagram.com/oma_natura/"
-        },
+        // {
+        //     "name":"trip_advisor",
+        //     "icon":"/images/icons/tripadvisor.png",
+        //     "link":"https://www.instagram.com/oma_natura/"
+        // },
     ]
 }

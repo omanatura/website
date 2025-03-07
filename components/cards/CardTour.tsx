@@ -36,7 +36,7 @@ const CardTour = async ({ tour }: CardProps) => {
             {days}{t((days > 1 ? 'daysTrip':'dayTrip'))}
           </span>
         </div>
-        <p>{t(shortDescription)}</p>
+        <p className="!text-xs">{t(shortDescription)}</p>
       </div>
     </Link>
   );

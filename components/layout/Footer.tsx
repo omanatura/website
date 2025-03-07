@@ -44,7 +44,7 @@ const Footer = async () => {
           </div>
 
           <div className="md:w-[316px]">
-            <p className="text-white font-inter text-[18px] font-medium leading-normal">
+            <p className="text-white font-inter text-[18px] font-medium leading-normal border-b-4 w-fit">
               {t("contact")}
             </p>
             <div className="mt-[23px] flex items-center">
@@ -124,7 +124,7 @@ const Footer = async () => {
 
           <div className="mt-6 flex flex-col justify-between text-white sm:flex-row md:mt-0 md:max-w-[341px]">
             <div className="">
-              <p className="text-deutziawhite font-inter text-[18px] font-medium leading-normal">
+              <p className="text-deutziawhite font-inter text-[18px] font-medium leading-normal border-b-4 w-fit">
                 {t("links")}
               </p>
               <ul>
@@ -156,7 +156,7 @@ const Footer = async () => {
             </div>
           </div>
         </div>
-        <hr className="mt-[30px] text-white" />
+        <hr className="my-[30px] text-white" />
       </div>
     </footer>
   );

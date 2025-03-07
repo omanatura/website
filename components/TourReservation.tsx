@@ -59,7 +59,7 @@ const TourReservation = ({ tour }: { tour: Tour }) => {
             </div>
           </div>
           <div className="mb-5">
-            <ul className="max-w-md space-y-1 text-gray-500 list-inside">
+            <ul className="max-w-md space-y-1 text-gray-700 list-inside">
               <li className="flex items-center">
                 <svg
                   className="w-3.5 h-3.5 me-2 text-green-500 shrink-0"
