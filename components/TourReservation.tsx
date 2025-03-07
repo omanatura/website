@@ -11,7 +11,7 @@ import { useScrollPosition } from "@/lib/hooks/useScrollPosition";
 
 const TourReservation = ({ tour }: { tour: Tour }) => {
     //Destructure values needed
-  const { price, maxPerGroup, priceOne } = tour;
+  const { price, priceOne } = tour;
   //State to manage number of attendants selected
   const [attendants, setAttendants] = useState(2);
   //State to manage total cost of the tour
