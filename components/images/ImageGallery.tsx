@@ -52,7 +52,7 @@ export default function ImageGallery({
           {images.map((image, index) => (
             <CarouselItem
               key={`${tourName}${index}`}
-              className="pl-2 md:pl-4 basis-1/3 lg:basis-1/5"
+              className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/5"
             >
               <div
                 className="relative rounded-lg overflow-hidden cursor-pointer group aspect-[4/3]"

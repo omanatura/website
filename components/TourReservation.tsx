@@ -116,9 +116,9 @@ const TourReservation = ({ tour }: { tour: Tour }) => {
       >
         <div className="flex gap-1 sm:gap-2">
           <div className="flex flex-col justify-end">
-            <h4 className="font-bold text-xl">{gt("from")}:</h4>
+            <h4 className="font-bold text-lg lg:text-xl">{gt("from")}:</h4>
             <div className="flex justify-end gap-1 sm:gap-2">
-              <h4 className="text-primary text-4xl sm:text-5xl font-extrabold">
+              <h4 className="text-primary text-3xl sm:text-5xl font-extrabold">
                 ${total}
               </h4>
               <div className="flex items-end">
@@ -127,10 +127,10 @@ const TourReservation = ({ tour }: { tour: Tour }) => {
             </div>
           </div>
           <div className="flex flex-col justify-center items-center">
-            <IoMdPeople size={30} className="my-1" />
+            <IoMdPeople size={25} className="my-1" />
             <Input
               type="number"
-              className="border-primary w-14 text-center font-bold text-lg"
+              className="border-primary w-12 text-center font-bold text-lg"
               value={attendants}
               onChange={(e) => setAttendants(Number(e.target.value))}
             />
