@@ -11,8 +11,8 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "OMA Natura",
-  description: "Get to know the best of the Costa Rican Wildforest with OMA Natura",
+  title: "OMA Natura Costa Rica",
+  description: "Get to know the best of the Costa Rican Rainforest with OMA Natura.",
 };
 
 export default async function RootLayout({

@@ -1,5 +1,13 @@
+import { getTranslations } from "next-intl/server";
 import Link from "next/link";
 import { FaWhatsapp } from "react-icons/fa";
+
+export async function generateMetadata(){
+    const t = await getTranslations("nav");
+    return {
+        title: `${t('contact')} - OMA Natura Costa Rica`
+    };
+}
 
 const Contact = () => {
   return (

@@ -15,6 +15,17 @@ export async function generateStaticParams() {
   }));
 }
 
+export async function generateMetadata({params}:{params:Promise<{slug:string}>}){
+    const t = await getTranslations("tours");
+    const { slug } = await params
+    const tour = tours.filter((tour) => tour.slug === slug);
+    const name = t(tour[0].name);
+    return {
+        title: `${name} - OMA Natura Costa Rica`,
+        description: t(tour[0].shortDescription)
+    };
+}
+
 export default async function TourPage({ params }: TourPageProps) {
   const slug = (await params).slug;
   const tour = tours.find((t) => t.slug === slug);

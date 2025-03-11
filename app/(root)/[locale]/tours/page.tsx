@@ -1,5 +1,13 @@
 import CardTour from "@/components/cards/CardTour";
 import { tours } from "@/data/tours"
+import { getTranslations } from "next-intl/server";
+
+export async function generateMetadata(){
+    const t = await getTranslations("nav");
+    return {
+        title: `${t('tours')} - OMA Natura Costa Rica`
+    };
+}
 
 const Tours = () => {
   return (

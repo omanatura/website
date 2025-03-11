@@ -3,6 +3,13 @@ import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import { main } from "@/data/main";
 
+export async function generateMetadata(){
+    const t = await getTranslations("nav");
+    return {
+        title: `${t('about')} - OMA Natura Costa Rica`
+    };
+}
+
 const About = async () => {
     const t = await getTranslations("about");
     const g = await getTranslations("global");
