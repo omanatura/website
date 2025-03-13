@@ -19,10 +19,11 @@
   },
   "footer":{
     "description":"Durante más de 5 años, hemos sido apasionados por guiar a exploradores como tú al corazón del vibrante ecosistema de Costa Rica.",
-    "contact":"Contacto",
+    "cancellationPolicy": "Políticas de Cancelación",
+    "contact": "Contacto",
     "terms":"Términos & Condiciones",
     "privacy":"Políticas de Privacidad",
-    "links":"Enlaces"
+    "links":"Políticas"
   },
   "home": {
     "cta1": "¿Listo para tu próxima aventura?",

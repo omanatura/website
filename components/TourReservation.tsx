@@ -54,11 +54,6 @@ const TourReservation = ({ tour }: { tour: Tour }) => {
                 onChange={(e) => setAttendants(Number(e.target.value))}
               />
             </div>
-            <div className="flex justify-center items-end">
-              <p className="font-light mb-2">
-                {attendants > 1 ? gt("adults") : gt("adult")}
-              </p>
-            </div>
           </div>
           <div className="mb-5">
             <ul className="max-w-md space-y-1 text-gray-700 list-inside">

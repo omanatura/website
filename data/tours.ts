@@ -6,7 +6,7 @@ export const tours: Tour[] = [
     slug: "one-week-rainforest-experience",
     name: "oneWeekName",
     shortDescription: "oneWeekShortDescription",
-    days:7,
+    days:8,
     images: [
       "/images/morning-chants/mc1.webp",
       "/images/morning-chants/mc2.webp",
@@ -22,10 +22,9 @@ export const tours: Tour[] = [
       "/images/morning-chants/mc12.webp",
     ],
     price: 1400,
-    priceOne: 1400,
+    priceOne: 2000,
     maxPerGroup: 6,
     location: "La Fortuna - Monteverde",
-    languages: ["English", "Espanol"],
   },
   {
     slug: "morning-chants-birdwatching",
@@ -50,7 +49,6 @@ export const tours: Tour[] = [
     priceOne: 100,
     maxPerGroup: 6,
     location: "La Fortuna",
-    languages: ["English", "Espanol"],
   },
   {
     slug: "moonlit-creatures",
@@ -62,7 +60,6 @@ export const tours: Tour[] = [
     priceOne: 100,
     maxPerGroup: 6,
     location: "La Fortuna",
-    languages: ["English", "Espanol"]
   },
   {
     slug: "childrens-eternal-rainforest",
@@ -84,6 +81,5 @@ export const tours: Tour[] = [
     priceOne: 160,
     maxPerGroup: 8,
     location: "La Fortuna",
-    languages: ["English", "Espanol"],
   },
 ];

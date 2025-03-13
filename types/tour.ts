@@ -8,5 +8,4 @@ export type Tour = {
     priceOne: number;
     maxPerGroup: number;
     location: string;
-    languages: string[];
   };

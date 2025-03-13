@@ -131,9 +131,9 @@ const Footer = async () => {
                 <li key="contact-footer" className="mt-[15px]">
                   <Link
                     className="text-deutziawhite hover:text-deutziawhite/80 font-inter text-[15px] font-normal hover:font-semibold"
-                    href={`/${locale}/contact`}
+                    href={`/${locale}/cancellation-policy`}
                   >
-                    {t("contact")}
+                    {t("cancellationPolicy")}
                   </Link>
                 </li>
                 <li key="terms-footer" className="mt-[15px]">

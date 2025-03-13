@@ -1,5 +1,6 @@
 export const main = {
     "companyName":"OMA Natura",
+    "site":"https://www.omanatura.con",
     "phoneNumber":"+506 8959 3866",
     "waLink":"https://wa.me/50689593866",
     "email":'info@omanatura.com',
@@ -8,7 +9,7 @@ export const main = {
         {
             "name":"instagram",
             "icon":"/images/icons/instagram.png",
-            "link":"https://www.instagram.com/oma_natura/"
+            "link":"https://www.instagram.com/omanatura.cr/"
         },
         {
             "name":"facebook",
