@@ -23,7 +23,8 @@
     "contact": "Contacto",
     "terms":"Términos & Condiciones",
     "privacy":"Políticas de Privacidad",
-    "links":"Políticas"
+    "links":"Información",
+    "credits":"Créditos"
   },
   "home": {
     "cta1": "¿Listo para tu próxima aventura?",
@@ -67,5 +68,10 @@
 
     "moonlitName": "Creaturas bajo la luna: Caminata nocturna",
     "moonlitShortDescription": "¡Descubre la magia después del anochecer! Observa vida silvestre nocturna en esta aventura bajo las estrellas. "
+  },
+  "credits":{
+    "credits":"Créditos",
+    "description":"Los siguientes recursos gratuitos fueron utilizados en la creación de este sitio:",
+    "author":"Autor"
   }
 }

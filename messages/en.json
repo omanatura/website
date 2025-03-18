@@ -23,7 +23,8 @@
     "contact": "Contact",
     "terms": "Terms & Conditions",
     "privacy": "Privacy Policy",
-    "links": "Policies"
+    "links": "Info",
+    "credits":"Credits"
   },
   "home": {
     "cta1": "Ready for your next adventure?",
@@ -72,5 +73,10 @@
 
     "moonlitName": "Moonlit Creatures: Night Tour",
     "moonlitShortDescription": "Discover the magic after dark! Spot nocturnal wildlife on this adventure under the stars. Perfect for curious explorers!"
+  },
+  "credits":{
+    "credits":"Credits",
+    "description":"The following free resources were used to build this website:",
+    "author":"Author"
   }
 }

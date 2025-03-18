@@ -152,6 +152,14 @@ const Footer = async () => {
                     {t("privacy")}
                   </Link>
                 </li>
+                <li key="credits-footer" className="mt-[15px]">
+                  <Link
+                    className="text-deutziawhite hover:text-deutziawhite/80 font-inter text-[15px] font-normal hover:font-semibold"
+                    href={`/${locale}/credits`}
+                  >
+                    {t("credits")}
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>
