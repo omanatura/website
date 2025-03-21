@@ -55,7 +55,8 @@ const TourReservation = ({ tour }: { tour: Tour }) => {
               />
             </div>
           </div>
-          <div className="mb-5">
+          {tour.name != "oneWeekName" && (
+            <div className="mb-5">
             <ul className="max-w-md space-y-1 text-gray-700 list-inside">
               <li className="flex items-center">
                 <svg
@@ -95,6 +96,7 @@ const TourReservation = ({ tour }: { tour: Tour }) => {
               </li>
             </ul>
           </div>
+          )}
           <Link href="https://wa.me/50689593866" target="_blank">
             <button className="btn-2 py-8 w-full">
               <FaWhatsapp size={30} color="white" /> {gt("reserveNow")}
