@@ -21,7 +21,7 @@ export const tours: Tour[] = [
       "/images/one-week/10.jpg",
       "/images/one-week/11.jpg"
     ],
-    price: 1400,
+    price: 1500,
     priceOne: 3000,
     maxPerGroup: 6,
     location: "La Fortuna - Monteverde",

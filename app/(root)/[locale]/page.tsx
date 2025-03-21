@@ -80,7 +80,7 @@ export default async function Home() {
           </h2>
           <div className="relative mt-5 mb-16 lg:mb-5">
             <div className="flex justify-center absolute w-full z-40">
-              <Link href={`/${locale}/tour/one-week`} className="btn-1">
+              <Link href={`/${locale}/tour/one-week-rainforest-experience`} className="btn-1">
                 {globalT("learnMore")}
               </Link>
             </div>
