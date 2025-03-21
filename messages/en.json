@@ -31,7 +31,7 @@
     "cta2": "Visit Costa Rica",
     "ctaButton": "Check out our tours!",
     "checkOutOur": "Check out our",
-    "toursIn": "One-day Tours",
+    "toursIn": "Tours in La Fortuna",
     "mission1": "We aim to give you a ",
     "mission2": "real experience ",
     "mission3": "at one of the world's most ",
@@ -39,7 +39,15 @@
     "mission5": "countries",
     "missionitem1": "Be amazed by wildlife",
     "missionitem2": "Connect with local culture",
-    "missionitem3": "Immersive experiences"
+    "missionitem3": "Live immersive experiences"
+  },
+  "homeBanner":{
+    "title1":"Immerse Yourself in Nature’s Majesty",
+    "description1":"From misty cloud forests to thundering waterfalls, Costa Rica’s natural wonders will leave you breathless. Feel the rush of adventure as you explore lush trails, hidden gems, and the untamed beauty of the rainforest.",
+    "title2":"Discover Costa Rica’s Wildlife Wonders",
+    "description2":"Get up close with the incredible biodiversity of Costa Rica. Spot playful monkeys, colorful toucans, and the iconic sloth as you wander through pristine rainforests and protected reserves.",
+    "title3":"Taste the Richness of Costa Rican Culture",
+    "description3":"Dive into the heart of Costa Rican culture with hands-on experiences like chocolate-making. Savor the flavors, stories, and warmth of a culture deeply connected to its land and heritage."
   },
   "about": {
     "weAre": "We are",

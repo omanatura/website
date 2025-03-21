@@ -31,7 +31,7 @@
     "cta2": "Ven a Costa Rica",
     "ctaButton": "Mira nuestros tours",
     "checkOutOur": "Conozca sobre nuestra experiencia",
-    "toursIn": "Tours de un día",
+    "toursIn": "Tours en La Fortuna",
     "mission1": "Nuestro objetivo es brindarte una ",
     "mission2": "experiencia auténtica ",
     "mission3": "en uno de los países más ",
@@ -39,8 +39,16 @@
     "mission5": "del mundo",
     "missionitem1": "Sorpréndete con la vida silvestre",
     "missionitem2": "Conéctate con la cultura local",
-    "missionitem3": "Experiencias inmersivas"
+    "missionitem3": "Vive experiencias inmersivas"
     },
+    "homeBanner": {
+      "title1": "Sumérgete en la Majestuosidad de la Naturaleza",
+      "description1": "Desde bosques nubosos llenos de neblina hasta imponentes cascadas, las maravillas naturales de Costa Rica te dejarán sin aliento. Siente la emoción de la aventura mientras exploras senderos frondosos, joyas escondidas y la belleza indómita de la selva.",
+      "title2": "Descubre las Maravillas de la Fauna Costarricense",
+      "description2": "Acércate a la increíble biodiversidad de Costa Rica. Observa monos juguetones, tucanes coloridos y el icónico perezoso mientras recorres selvas prístinas y reservas protegidas.",
+      "title3": "Saborea la Riqueza de la Cultura Costarricense",
+      "description3": "Sumérgete en el corazón de la cultura costarricense con experiencias prácticas como la elaboración de chocolate. Disfruta de los sabores, las historias y la calidez de una cultura profundamente conectada con su tierra y su herencia."
+  },
   "about": {
     "weAre": "Somos",
     "header1": "Tu puerta de entrada a aventuras inolvidables en el ",

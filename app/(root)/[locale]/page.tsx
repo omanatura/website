@@ -110,7 +110,7 @@ export default async function Home() {
       {/* <!-- Goal section  --> */}
       <section className="mt-5">
         <div className="divider h-10 mb-10 mt-14"></div>
-        <div className="container mx-auto">
+        <div className="container mx-auto px-5">
           <div className="flex justify-center">
             <h3 className="text-center text-3xl font-extrabold md:w-[75%] lg:w-[50%]">
               {homeT("mission1")}
@@ -128,7 +128,7 @@ export default async function Home() {
                 src="/images/lapa.jpg"
                 width={200}
                 height={200}
-                style={{ clipPath: "url(#leafClipPath)" }}
+                style={{ clipPath: "ellipse(40% 40% at 50% 50%)" }}
               />
               <h1 className="text-center text-lg font-bold text-green-700">
                 {homeT("missionitem1")}
@@ -141,7 +141,7 @@ export default async function Home() {
                 alt=""
                 width={200}
                 height={200}
-                style={{ clipPath: "url(#leafClipPath)" }}
+                style={{ clipPath: "ellipse(40% 40% at 50% 50%)" }}
               />
               <h1 className="text-center text-lg font-bold text-green-700">
                 {homeT("missionitem2")}
@@ -150,37 +150,22 @@ export default async function Home() {
 
             <div className="flex flex-col justify-center items-center col-span-2 sm:col-span-1">
               <Image
-                src="/images/by-miguel-bruna-unsplash.jpg"
+                src="/images/bridge.jpg"
                 alt=""
                 width={200}
                 height={200}
-                style={{ clipPath: "url(#leafClipPath)" }}
+                style={{ clipPath: "ellipse(40% 40% at 50% 50%)" }}
               />
               <h1 className="text-center text-lg font-bold text-green-700">
                 {homeT("missionitem3")}
               </h1>
             </div>
-            
-            {/* LEAF CLIP PATH */}
-            <svg
-              width="100"
-              height="100"
-              viewBox="0 0 200 200"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <clipPath
-                id="leafClipPath"
-                transform="scale(1.7) translate(-33, -10)"
-              >
-                <path d="M100,10 C130,30 150,60 150,100 C150,140 130,170 100,190 C70,170 50,140 50,100 C50,60 70,30 100,10 Z"></path>
-              </clipPath>
-            </svg>
           </div>
         </div>
       </section>
 
       {/* <!-- Testimonials --> */}
-      <section className="flex justify-center mb-10">
+      <section className="flex justify-center my-10">
         <div>
           <div className="divider h-10 mb-10"></div>
           <h3 className="text-center font-bold text-gradient text-3xl mb-10">

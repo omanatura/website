@@ -43,7 +43,7 @@ export default async function TourPage({ params }: TourPageProps) {
       <section className=" divider-chevron-down">
         <Image
           alt="Tour banner"
-          src={tour.images[1]}
+          src={tour.banner}
           quality={100}
           fill
           sizes="100vw"

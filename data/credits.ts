@@ -50,9 +50,19 @@ export const credits = [
         link:'https://www.pexels.com/photo/close-up-of-a-green-snake-11354023/'
     },
     {
-        author:'Alejandro Orozco',
+        author:'Alejandro Orozco 1',
         thumbnail:'https://images.pexels.com/photos/23408577/pexels-photo-23408577/free-photo-of-green-red-eyed-tree-frog-on-a-branch.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         link:'https://www.pexels.com/photo/green-red-eyed-tree-frog-on-a-branch-23408577/'
+    },
+    {
+        author:'Alejandro Orozco 2',
+        thumbnail:'https://images.pexels.com/photos/23833408/pexels-photo-23833408/free-photo-of-beddomes-cat-snake.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        link:'https://www.pexels.com/photo/beddomes-cat-snake-23833408/'
+    },
+    {
+        author:'Alejandro Orozco 3',
+        thumbnail:'https://images.pexels.com/photos/23645287/pexels-photo-23645287/free-photo-of-green-iguana-on-branch.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        link:'https://www.pexels.com/photo/green-iguana-on-branch-23645287/'
     },
     {
         author:'Ivan Rojas',
@@ -60,8 +70,33 @@ export const credits = [
         link:'https://www.pexels.com/photo/yellow-eyelash-viper-on-reflective-surface-28542639/'
     },
     {
-        author:'Erick Arce ',
+        author:'Erick Arce 1',
         thumbnail:'https://images.pexels.com/photos/15477997/pexels-photo-15477997/free-photo-of-close-up-of-a-lizard-on-a-rock.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         link:'https://www.pexels.com/photo/close-up-of-a-lizard-on-a-rock-15477997/'
-    }
+    },
+    {
+        author:'Erick Arce 2',
+        thumbnail:'https://images.pexels.com/photos/15915605/pexels-photo-15915605/free-photo-of-close-up-of-bat-feeding-on-flower.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        link:'https://www.pexels.com/photo/close-up-of-bat-feeding-on-flower-15915605/'
+    },
+    {
+        author:'Erick Arce 3',
+        thumbnail:'https://images.pexels.com/photos/15478021/pexels-photo-15478021/free-photo-of-close-up-of-a-frog.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        link:'https://www.pexels.com/photo/close-up-of-a-frog-15478021/'
+    },
+    {
+        author:'Selina Bubendorfer',
+        thumbnail:'https://images.unsplash.com/photo-1602190630787-ad7cb65afa78?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        link:'https://unsplash.com/photos/person-in-yellow-jacket-standing-on-hanging-bridge-X3zFdLVQLKE'
+    },
+    {
+        author:'Zdeněk Macháček',
+        thumbnail:'https://images.unsplash.com/photo-1551189013-03cf5bc1c73c?q=80&w=1506&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        link:'https://unsplash.com/photos/scarlet-macaw-vIx55PnjL58'
+    },
+    {
+        author:'Alexandra Tran',
+        thumbnail:'https://images.unsplash.com/photo-1630023367957-af048d5c08d6?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        link:'https://unsplash.com/photos/man-standing-on-rocky-shore-near-waterfalls-during-daytime-kgRq4mXOHEE'
+    },
 ]
