@@ -26,8 +26,8 @@ export default function CarouselHome() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end p-6 md:p-8 lg:p-10">
                 <div className="text-white space-y-2">
-                  <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold">{t(`title${number}`)}</h3>
-                  <p className="text-base md:text-lg lg:text-xl">
+                  <h3 className="text-xl md:text-2xl lg:text-3xl font-bold">{t(`title${number}`)}</h3>
+                  <p className="text-base md:text-md lg:text-lg">
                   {t(`description${number}`)}
                   </p>
                 </div>
