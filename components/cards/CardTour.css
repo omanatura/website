@@ -15,12 +15,11 @@
   }
 
   .card-tour p {
-    @apply leading-4;
+    @apply leading-4 mb-3 px-3;
     color: white;
     font-weight: 400;
     font-size: 16px;
     align-self: end;
-    margin: 0 0 20px 20px;
     letter-spacing: 0.5px;
   }
 
