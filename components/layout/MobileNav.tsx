@@ -40,7 +40,7 @@ const MobileNav = async () => {
             paths.map((path) => (
               <Link
                 key={path}
-                href={`/${currentLocale}/${path}`}
+                href={path === 'home' ? `/${currentLocale}`:`/${currentLocale}/${path}`}
                 className="text-2xl text-primary font-medium hover:underline hover:underline-offset-4"
               >
                 {t(path)}

@@ -12,7 +12,7 @@ export async function generateMetadata(){
 const Credits = async () => {
   const t = await getTranslations("credits");
   return (
-    <main className="container mx-auto mt-28 mb-10">
+    <main className="container mx-auto px-5  mt-28 mb-10">
       <h3 className="text-4xl text-center text-primary font-extrabold mb-5">
         <span className="border-b-4 border-secondary w-fit">
           {t("credits")}
